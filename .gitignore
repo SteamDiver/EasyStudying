@@ -25,3 +25,5 @@ Temp/
 *.csproj
 *.suo
 *.pdb
+config.ini
+Data/
