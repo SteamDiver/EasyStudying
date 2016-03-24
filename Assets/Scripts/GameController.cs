@@ -172,10 +172,13 @@ public class GameController : MonoBehaviour
     public void Next()
     {
         bool right = Check();
-        if (right && _lessonnumber == NavController.Lessons.Length - 1)
+        if ( _lessonnumber == NavController.Lessons.Length - 1)
         {
-            _statuscounter += 1;
-            SetStatus(_statuscounter, NavController.Lessons.Length);
+            if (right)
+            {
+                _statuscounter += 1;
+                SetStatus(_statuscounter, NavController.Lessons.Length);
+            }
             ResultsPanel.SetActive(true);
             Status.transform.SetParent(ResultsPanel.transform);
             Status.transform.position = new Vector3(0, 0, 0);
