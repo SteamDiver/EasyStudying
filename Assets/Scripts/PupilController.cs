@@ -10,7 +10,7 @@ public class PupilController : MonoBehaviour
     private string folder = new NavController().folder;
     public void start()
     {
-        
+        DontDestroyOnLoad(this);
     }
 
     public void NewPupil(GameObject PupilName)
@@ -18,19 +18,19 @@ public class PupilController : MonoBehaviour
         try
         {
             if (PupilName.GetComponent<Text>().text != "")
-            {
-               StreamWriter PupilSW = new StreamWriter(folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt");
+            {              
+               NavController.Pupil = folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt";
                IsOk = true;
             }
             else
             {
                 IsOk = false;               
-                ErrorController.ShowError(001, "Поле не заполнено");
+                ErrorController.ShowError("Поле не заполнено");
             }
         }
         catch
         {
-            ErrorController.ShowError(002, "Что-то пошло не так...");
+            ErrorController.ShowError("Что-то пошло не так...");
         }
     }
     public void LoadPupil(GameObject PupilName)
@@ -38,13 +38,15 @@ public class PupilController : MonoBehaviour
         try
         {
             StreamReader Pupil = new StreamReader(folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt");
+            NavController.Pupil = folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt";
             IsOk = true;
             Debug.Log("Ok");
         }
         catch
         {
-            ErrorController.ShowError(003, "Такой ученик не найден");            
+            ErrorController.ShowError("Такой ученик не найден");            
             IsOk = false;            
         }
     }
+    
 }

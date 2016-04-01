@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
         }
         catch
         {
-            ErrorController.ShowError(004, "Что-то пошло не так...");
+            ErrorController.ShowError("Что-то пошло не так...");
         }
 
     }
@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
                         break;
                     case "[Blocks]":
                         _blocks = sr.ReadLine();
-                        string[] split = _blocks.Split(new char[] { ' ' });//разделение списка блоков по пробелу
+                        string[] split = _blocks.Split(new char[] { ' ' });
                         foreach (string blockname in split)
                         {
                             GenerateBlock(blockname);
@@ -165,7 +165,7 @@ public class GameController : MonoBehaviour
         {
             Answer = null;
             AllFilled = false;
-            ErrorController.ShowError(005, "Не был дан ответ");
+            ErrorController.ShowError("Не был дан ответ");
             return right = false;
         }
     }
@@ -231,6 +231,15 @@ public class GameController : MonoBehaviour
         //DestroyObject(NavController);
         
     }
+    public void SaveResults()
+    {
 
+        StreamWriter sw = new StreamWriter(NavController.Pupil, true);
+        Debug.Log(NavController.Theme);
+        sw.WriteLine(System.DateTime.Now + "\t" + NavController.Theme + "\t" + Status.GetComponent<Text>().text);
+        sw.Close();
+        SceneManager.LoadScene(0);
+
+    }
 }
 

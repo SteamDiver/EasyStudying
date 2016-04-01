@@ -10,7 +10,6 @@ public class MenuController : MonoBehaviour
 {
 
     public Dropdown ThemeDropdown;
-    public Dropdown LessonDropdown;
    
     public NavController Nav;
     void Start()
@@ -95,8 +94,8 @@ public class MenuController : MonoBehaviour
     public void SetLesson()
     {
         NavController.Lessons = Directory.GetFiles(Nav.themefolder+@"\"+ThemeDropdown.options[ThemeDropdown.value].text);
-        Debug.Log(NavController.Lessons[0]);
-        
-        
+        NavController.Theme = ThemeDropdown.options[ThemeDropdown.value].text;
+
+
     }
 }

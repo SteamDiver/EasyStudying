@@ -7,6 +7,8 @@ public class NavController : MonoBehaviour
     public string folder = @"Data";
     public string themefolder = @"Data\Tasks";
     public static string[] Lessons;
+    public static string Theme;
+    public static string Pupil;
 
     public Canvas StartCanvas;
     public Canvas MenuCanvas;

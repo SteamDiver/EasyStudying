@@ -2,12 +2,9 @@
 
 public class ErrorController {
 
-	public static void ShowError(int code)
+	
+    public static void ShowError(string text)
     {
-        MessageBox.Show("Ошибка "+code, "Ошибка", MessageBoxButtons.OK);
-    }
-    public static void ShowError(int code, string text)
-    {
-        MessageBox.Show("Ошибка " + code+"\n"+text, "Ошибка", MessageBoxButtons.OK);
+        MessageBox.Show("Ошибка! \n"+text, "Ошибка", MessageBoxButtons.OK);
     }
 }
