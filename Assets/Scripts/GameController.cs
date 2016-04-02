@@ -75,19 +75,27 @@ public class GameController : MonoBehaviour
                         break;
                     case "[Blocks]":
                         _blocks = sr.ReadLine();
+                        _CorrectOrder = _blocks.Replace(" ","");
+                        Debug.Log(_CorrectOrder);
                         string[] split = _blocks.Split(new char[] { ' ' });
+                        var rand = new System.Random();
+                        for (int i = split.Length - 1; i >= 0; i--)
+                        {
+                            int j = rand.Next(i);
+                            var temp = split[i];
+                            split[i] = split[j];
+                            split[j] = temp;
+                        }
                         foreach (string blockname in split)
                         {
                             GenerateBlock(blockname);
                             GenerateFieldSlot();
                         }
-                        break;
-                    case "[CorrectOrder]":
-                        _CorrectOrder = sr.ReadLine();
-                        break;
+                        break;                   
                 }
             }
         }
+        sr.Close();
 
     }
 
@@ -145,7 +153,7 @@ public class GameController : MonoBehaviour
                 Answer += child.GetChild(0).GetComponentInChildren<Text>().text;
 
             }
-            if (Answer == _CorrectOrder && Answer != null)
+            if (Equals( Answer , _CorrectOrder) && Answer != null)
             {
                 right = true;
                 AllFilled = true;
@@ -172,7 +180,7 @@ public class GameController : MonoBehaviour
     public void Next()
     {
         bool right = Check();
-        if ( _lessonnumber == NavController.Lessons.Length - 1)
+        if (Equals( _lessonnumber, NavController.Lessons.Length - 1))
         {
             if (right)
             {

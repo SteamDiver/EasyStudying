@@ -18,9 +18,11 @@ public class PupilController : MonoBehaviour
         try
         {
             if (PupilName.GetComponent<Text>().text != "")
-            {              
+            {
+                StreamWriter sw = new StreamWriter(folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt");              
                NavController.Pupil = folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt";
                IsOk = true;
+                sw.Close();
             }
             else
             {
@@ -41,6 +43,7 @@ public class PupilController : MonoBehaviour
             NavController.Pupil = folder + "/Pupils/" + PupilName.GetComponent<Text>().text + ".txt";
             IsOk = true;
             Debug.Log("Ok");
+            Pupil.Close();
         }
         catch
         {

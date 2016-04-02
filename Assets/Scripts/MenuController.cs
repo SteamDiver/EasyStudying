@@ -85,10 +85,10 @@ public class MenuController : MonoBehaviour
 
         foreach (DirectoryInfo theme in themes)
         {
-            Debug.Log(theme.Name);
-            ThemeDropdown.options.Add(new Dropdown.OptionData(theme.Name));
+                       ThemeDropdown.options.Add(new Dropdown.OptionData(theme.Name));
 
         }
+      
 
     }
     public void SetLesson()
