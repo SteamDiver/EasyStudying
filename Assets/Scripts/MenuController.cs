@@ -10,11 +10,11 @@ public class MenuController : MonoBehaviour
 {
 
     public Dropdown ThemeDropdown;
-   
+
     public NavController Nav;
     void Start()
     {
-        
+
 
 
 
@@ -78,22 +78,22 @@ public class MenuController : MonoBehaviour
     }
 
     private void SetThemes()
-    {        
+    {
         DirectoryInfo di = new DirectoryInfo(Nav.themefolder);
         DirectoryInfo[] themes = di.GetDirectories();
 
 
         foreach (DirectoryInfo theme in themes)
         {
-                       ThemeDropdown.options.Add(new Dropdown.OptionData(theme.Name));
+            ThemeDropdown.options.Add(new Dropdown.OptionData(theme.Name));
 
         }
-      
+
 
     }
     public void SetLesson()
     {
-        NavController.Lessons = Directory.GetFiles(Nav.themefolder+@"\"+ThemeDropdown.options[ThemeDropdown.value].text);
+        NavController.Lessons = Directory.GetFiles(Nav.themefolder + @"\" + ThemeDropdown.options[ThemeDropdown.value].text);
         NavController.Theme = ThemeDropdown.options[ThemeDropdown.value].text;
 
 
