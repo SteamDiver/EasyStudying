@@ -1,0 +1,70 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon (TM) R9 200 Series (ID=0x6811)
+    Vendor:   ATI
+    VRAM:     2030 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\System.Windows.Forms.dll (this message is harmless)
+Loading D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
+- Completed reload, in  0.092 seconds
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 47.370121 ms
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\System.Drawing.dll (this message is harmless)
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\Accessibility.dll (this message is harmless)
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libc
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\libc
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libc
+Platform assembly: D:\2_Files\EasyStudying_pc\EasyStudying_Data\Managed\Mono.Posix.dll (this message is harmless)
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libc
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\libc
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libc
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/libX11
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/.\lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library D:/2_Files/EasyStudying_pc/EasyStudying_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.271790 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 295.
+Total: 1.255740 ms (FindLiveObjects: 0.336488 ms CreateObjectMapping: 0.013828 ms MarkObjects: 0.816527 ms  DeleteObjects: 0.088237 ms)
+
+Екатерина_IПетр_IIАнна_ИоанновнаЕлизаветаЕкатерина_II
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Б.ГодуновФёдор_IIДмитрийВ.Шуйский
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.313029 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 480.
+Total: 0.978186 ms (FindLiveObjects: 0.037204 ms CreateObjectMapping: 0.027327 ms MarkObjects: 0.891266 ms  DeleteObjects: 0.021730 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1208 -> priority: 1 
