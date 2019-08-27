@@ -1,14 +1,14 @@
 # EasyStudying
-##What is it?
+## What is it?
 EasyStudying is Unity-based application for students testing
 
-##Features
+## Features
 * Simple method of forming students lists
 * Simple method of forming tasks lists
 * Intuitive interface
 * Quick information access
 
-##Requrements
+## Requrements
 * Windows NT
 * .NET 2.0
 
@@ -30,5 +30,5 @@ Data
         "SomeTask2.txt"
 ```
 
-#License
+# License
  This product is under BSD license
